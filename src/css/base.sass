@@ -105,6 +105,7 @@ p
 
   padding-top: 54px
   padding-left: 75px
+  padding-bottom: 50px
 
 
 .dashboard-item
@@ -174,12 +175,14 @@ p
     height: 58px
     padding-left: 20px
 
+    border-radius: 5px
     font-size: 24px
     font-family: inherit
     border: 2px solid $lighPurple
 
 .dashboard-item_add-btn
   display: flex
+  align-items: center
   margin-left: auto
   margin-top: 60px
 
@@ -188,24 +191,8 @@ p
   color: $green
 
   span
-    padding-right: 49px
+    padding-right: 15px
     position: relative
-
-    &::after
-      position: absolute
-      content: '\f0da'
-      top: 50%
-      transform: translateY(-50%)
-      right: 0
-
-      width: 34px
-      height: 34px
-
-      border-radius: 50%
-
-      background: linear-gradient(0deg, $green, $green), $white
-      border: 3px solid rgba($white, 0.4)
-
   
   
 .personal-item
@@ -214,10 +201,17 @@ p
   padding-left: 32px
   padding-right: 27px
 
+  margin-bottom: 12px
+  min-height: 104px
+
   display: flex
   align-items: center
 
   border: 2px solid $lighPurple
+  border-radius: 5px
+
+  &:last-of-type
+    margin-bottom: 0
 
   &__information
 
@@ -232,8 +226,8 @@ p
       color: $grey
 
   &__cup
-    width: 67px
-    height: 68px
+    width: 64px
+    height: 64px
     margin-left: auto
 
 .pagination

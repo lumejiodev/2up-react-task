@@ -1,7 +1,8 @@
 import React from 'react'
 import { FontAwesomeIcon }   from "@fortawesome/react-fontawesome";
 import { faTrophy, faStar, faGem, faAnchor } from "@fortawesome/free-solid-svg-icons";
-// import Cup from "img/rhombus.svg";
+import { ReactComponent as Cup} from "img/rhombus.svg";
+import { ReactComponent as ButtonArrow} from "img/button_arrow.svg";
 
 export default class LeaderBoardTask extends React.Component {
     render() {
@@ -52,6 +53,7 @@ export default class LeaderBoardTask extends React.Component {
 
                     <button className="button button_green dashboard-item_add-btn">
                       <span>Добавить</span>
+                      <ButtonArrow />
                     </button>
                   </div>
                 </section>
@@ -71,9 +73,46 @@ export default class LeaderBoardTask extends React.Component {
                         </p>
                       </div>
                       <div className="personal-item__cup">
-                        {/* <Cup></Cup> */}
+                        <Cup />
                       </div>
                     </div>
+                    <div className="personal-item">
+                      <div className="personal-item__information">
+                        <p className="personal-item__information-title">
+                          Максим Кальченко
+                        </p>
+                        <p className="personal-item__information-score">
+                          7890 очков
+                        </p>
+                      </div>
+                      <div className="personal-item__cup">
+                        <Cup />
+                      </div>
+                    </div>
+                    <div className="personal-item">
+                      <div className="personal-item__information">
+                        <p className="personal-item__information-title">
+                          Виталий Янкевич
+                          </p>
+                        <p className="personal-item__information-score">
+                          7699 очков
+                          </p>
+                      </div>
+                      <div className="personal-item__cup">
+                        <Cup />
+                      </div>
+                    </div>
+                    <div className="personal-item">
+                      <div className="personal-item__information">
+                        <p className="personal-item__information-title">
+                          Максим Кальченко
+                        </p>
+                        <p className="personal-item__information-score">
+                          7890 очков
+                        </p>
+                      </div>
+                    </div>
+                    
                     <ul className="pagination dashboard-item_pagination">
                       <li>
                         <button className="button button__pagination button__pagination_active" />
