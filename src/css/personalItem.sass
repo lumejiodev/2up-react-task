@@ -1,0 +1,44 @@
+@import 'css/utils/all.sass'
+.personal-item
+  padding-top: 18px
+  padding-bottom: 18px
+  padding-left: 32px
+  padding-right: 27px
+
+  margin-bottom: 12px
+  min-height: 104px
+
+  display: flex
+  align-items: center
+
+  border: 2px solid $lighPurple
+  border-radius: 5px
+
+  &:last-of-type
+    margin-bottom: 0
+
+  &__information
+
+    &-title
+      font-size: 21px
+      line-height: 26px
+      color: $blackPurple
+
+    &-score
+      font-size: 18px
+      line-height: 23px
+      color: $grey
+
+  &__cup
+    width: 64px
+    height: 64px
+    margin-left: auto
+    position: relative
+
+    .fa-trophy
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      color: $white
+      font-size: 30px
