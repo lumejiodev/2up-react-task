@@ -1,22 +1,34 @@
 import React from 'react'
 import { FontAwesomeIcon }   from "@fortawesome/react-fontawesome";
-import { faTrophy } from "@fortawesome/free-solid-svg-icons";
+import { faTrophy, faStar, faGem, faAnchor } from "@fortawesome/free-solid-svg-icons";
+// import Cup from "img/rhombus.svg";
 
-export default class Todo extends React.Component {
+export default class LeaderBoardTask extends React.Component {
     render() {
         return <div>
             <div className="wrapper">
               <aside className="sidebar">
                 <div className="navigation-block">
-                  <ul className="navigation-list">
+                  <div className="logo" />
+                  <ul className="navigation-list navigation-list_mt">
                     <li className="navigation-item navigation-item_active">
-                      <button>
+                      <button className="button">
                         <FontAwesomeIcon icon={faTrophy} />
                       </button>
                     </li>
                     <li className="navigation-item">
-                      <button>
-                        <FontAwesomeIcon icon={faTrophy} />
+                      <button className="button">
+                        <FontAwesomeIcon icon={faStar} />
+                      </button>
+                    </li>
+                    <li className="navigation-item">
+                      <button className="button">
+                        <FontAwesomeIcon icon={faGem} />
+                      </button>
+                    </li>
+                    <li className="navigation-item">
+                      <button className="button">
+                        <FontAwesomeIcon icon={faAnchor} />
                       </button>
                     </li>
                   </ul>
@@ -37,8 +49,11 @@ export default class Todo extends React.Component {
                       <label htmlFor="points">Количество очков</label>
                       <input type="text" id="points" name="points" />
                     </div>
+
+                    <button className="button button_green dashboard-item_add-btn">
+                      <span>Добавить</span>
+                    </button>
                   </div>
-                  <button>Добавить</button>
                 </section>
 
                 <section className="dashboard-item">
@@ -48,20 +63,28 @@ export default class Todo extends React.Component {
                   <div className="dashboard-item__body dashboard-item__body_leaders">
                     <div className="personal-item">
                       <div className="personal-item__information">
-                        <p>Пётр Иванов</p>
-                        <p>8901 очков</p>
+                        <p className="personal-item__information-title">
+                          Пётр Иванов
+                        </p>
+                        <p className="personal-item__information-score">
+                          8901 очков
+                        </p>
                       </div>
                       <div className="personal-item__cup">
-                        
+                        {/* <Cup></Cup> */}
                       </div>
                     </div>
-                    <div className="dashboard-item__pagination">
-                      <ul>
-                        <li>
-                          <button />
-                        </li>
-                      </ul>
-                    </div>
+                    <ul className="pagination dashboard-item_pagination">
+                      <li>
+                        <button className="button button__pagination button__pagination_active" />
+                      </li>
+                      <li>
+                        <button className="button button__pagination" />
+                      </li>
+                      <li>
+                        <button className="button button__pagination" />
+                      </li>
+                    </ul>
                   </div>
                 </section>
               </main>
