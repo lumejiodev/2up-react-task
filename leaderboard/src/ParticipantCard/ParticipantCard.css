@@ -1,0 +1,24 @@
+.participantCard {
+    margin: 95px 30px 0;
+    margin-bottom: 60px;
+}
+
+.participantCard__title {
+    padding-bottom: 20px;
+
+    font-family: Tahoma;
+    line-height: 0px;
+    font-size: 21px;
+
+    color: #779181;
+}
+
+.participantCard__name {
+    width: 473px;
+    height: 58px; 
+    padding-left: 10px;
+    
+    background: #FFFFFF;
+    border: 2px solid #EFEEF8;
+    box-sizing: border-box;
+}

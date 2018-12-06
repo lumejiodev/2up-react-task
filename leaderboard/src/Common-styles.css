@@ -1,0 +1,17 @@
+.Board__container {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px;
+}
+
+.Board {
+    width: 532px;
+    height: auto;
+    background-color: white;
+    border: 1px solid #eee;
+    border-radius: 2px;
+}
+
+.leadersContainer {
+    margin: 20px 30px;
+}

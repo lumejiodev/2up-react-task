@@ -1,0 +1,37 @@
+import React, { Component } from 'react';
+import './Common-styles.css';
+import Header from './Header/Header';
+import ParticipantCard from './ParticipantCard/ParticipantCard';
+import LeaderCard from './LeaderCard/LeaderCard';
+
+class App extends Component {
+  render() {
+
+    return (
+      <div className="App Board__container">
+        <div className='Board'>
+          <Header title='Добавить участника'/>
+          <ParticipantCard title='Имя и фамилия'/>
+          <ParticipantCard title='Количество очков'/>
+        </div>
+
+        <div className='Board'>
+          <Header title='Лидеры'/>
+
+          <div className='leadersContainer'>
+            <LeaderCard name='Пётр Иванов' score='8901 очков'/>
+            <LeaderCard name='Максим Кальченко' score='7890 очков'/>
+            <LeaderCard name='Алёна Михалкова' score='7801 очков'/>
+            <LeaderCard name='Виталий Янкевич' score='7699 очков'/>
+            <LeaderCard name='Богдан Емельянов' score='5641 очков'/>
+            <LeaderCard name='Владимир Жванецкий' score='5278 очков'/>
+            <LeaderCard name='Лев Ямских' score='4804 очков'/>
+          </div>
+
+        </div>
+      </div>
+    );
+  }
+}
+
+export default App;

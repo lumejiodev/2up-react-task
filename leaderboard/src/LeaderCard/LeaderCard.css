@@ -1,0 +1,24 @@
+.LeaderCard {
+    margin: 10px 0;
+    padding: 30px;
+
+    background: #FFFFFF;
+    border: 2px solid #EFEEF8;
+    box-sizing: border-box;
+}
+
+.Leader-name {
+    font-family: Tahoma;
+    line-height: 0px;
+    font-size: 21px;
+
+    color: #777D91;
+}
+
+.Leader-score {
+    font-family: Tahoma;
+    line-height: 0px;
+    font-size: 18px;
+
+    color: #C1C5D4;
+}
