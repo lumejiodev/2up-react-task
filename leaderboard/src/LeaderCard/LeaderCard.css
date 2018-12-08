@@ -1,10 +1,17 @@
-.LeaderCard {
+.LeaderCard__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin: 10px 0;
     padding: 30px;
 
     background: #FFFFFF;
     border: 2px solid #EFEEF8;
     box-sizing: border-box;
+}
+
+.LeaderCard {
+    margin-bottom: 5px;
 }
 
 .Leader-name {
