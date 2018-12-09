@@ -8,12 +8,21 @@ import cup from './LeaderCard/cup.svg';
 class App extends Component {
   render() {
 
+    // const lightGreen = {
+    //   backgroundColor: '#7AD18A'
+    // }
+
+    // const purple = {
+      //   backgroundColor: '#847AD1'
+      // }
+
     return (
       <div className="App Board__container">
         <div className='Board'>
-          <Header title='Добавить участника'/>
+          <Header title='Добавить участника' />
           <ParticipantCard title='Имя и фамилия'/>
           <ParticipantCard title='Количество очков'/>
+          <button className='button'>Добавить</button>
         </div>
 
         <div className='Board'>

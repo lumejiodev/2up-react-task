@@ -29,3 +29,17 @@
 
     color: #C1C5D4;
 }
+
+.LeaderCard__image {
+    position: relative;
+    width: 67px;
+    height: 68px;
+    background: url('./cupBackground.svg') no-repeat;
+}
+
+.LeaderCard__image img {
+    position: absolute;
+    top: 30%;
+    left: 47%;
+    transform: translate(-50%);
+}
