@@ -19,8 +19,9 @@
 .button {
     position: relative;
 
-    width: 100%;
+    display: block;
     height: 25px;
+    margin-left: auto;
     padding-right: 75px;
 
     font-family: Tahoma;
