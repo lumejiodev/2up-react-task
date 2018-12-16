@@ -65,13 +65,23 @@ const AddPersonsFormButton = styled.button`
 
 
 const addPersonsForm = () => {
+    let person =
+            {name: "", score: 0}
+        ;
+
+    let persons = [];
+    const saveScore = (e) => {
+        e.preventDefault();
+        persons.push({name: person.name.value, score: person.score.value});
+    };
+
     return (
         <AddPersonsForm>
             <AddPersonsFormTitle>Имя и Фамилия</AddPersonsFormTitle>
-            <AddPersonsFormInput />
+            <AddPersonsFormInput ref={element => person.name = element} />
             <AddPersonsFormTitle>Количество очков</AddPersonsFormTitle>
-            <AddPersonsFormInput />
-            <AddPersonsFormButton />
+            <AddPersonsFormInput ref={element => person.score = element} />
+            <AddPersonsFormButton onClick={saveScore}/>
         </AddPersonsForm>
     )
 };
