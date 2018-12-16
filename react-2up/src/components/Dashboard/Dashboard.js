@@ -1,9 +1,9 @@
-import React from 'react';
+import React, {Fragment} from 'react';
 import styled from 'styled-components';
-import bag from '../../assets/images/baggage.svg';
-import car from '../../assets/images/rent-a-car.svg';
-import train from '../../assets/images/train.svg';
-import world from '../../assets/images/world.svg';
+import {Trophy} from 'styled-icons/fa-solid/Trophy';
+import {Star} from 'styled-icons/fa-solid/Star';
+import {Gem} from 'styled-icons/fa-regular/Gem';
+import {Anchor} from 'styled-icons/fa-solid/Anchor';
 
 const Dashboard = styled.div`
     width: 114px;
@@ -30,7 +30,7 @@ const IconContainer = styled.ul`
 
 const IconContainerItem = styled.li`
     list-style: none;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     &:last-child {
         margin-bottom: 0;
     }
@@ -40,9 +40,32 @@ const IconContainerLink = styled.a`
     cursor: pointer;
 `;
 
-const IconContainerImage = styled.img`
-    width: 30px;
-    height: 30px;
+export const Cup = styled(Trophy)`
+    color: #EFEEF8;
+    &:hover {
+        color: #F7527C
+    }
+`;
+
+export const Stars = styled(Star)`
+    color: #EFEEF8;
+    &:hover {
+        color: #F7527C
+    }
+`;
+
+export const Diamond = styled(Gem)`
+    color: #EFEEF8;
+    &:hover {
+        color: #F7527C
+    }
+`;
+
+export const Anchors = styled(Anchor)`
+    color: #EFEEF8;
+    &:hover {
+        color: #F7527C
+    }
 `;
 
 const dashboard = () => {
@@ -52,22 +75,22 @@ const dashboard = () => {
             <IconContainer>
                 <IconContainerItem>
                     <IconContainerLink>
-                       <IconContainerImage src={bag} />
+                        <Cup size="24"/>
                     </IconContainerLink>
                 </IconContainerItem>
                 <IconContainerItem>
                     <IconContainerLink>
-                        <IconContainerImage src={car} />
+                        <Stars size="24" />
                     </IconContainerLink>
                 </IconContainerItem>
                 <IconContainerItem>
                     <IconContainerLink>
-                        <IconContainerImage src={train} />
+                        <Diamond size="24" />
                     </IconContainerLink>
                 </IconContainerItem>
                 <IconContainerItem>
                     <IconContainerLink>
-                        <IconContainerImage src={world} />
+                        <Anchors size="24" />
                     </IconContainerLink>
                 </IconContainerItem>
             </IconContainer>
