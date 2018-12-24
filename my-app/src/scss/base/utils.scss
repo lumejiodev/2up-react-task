@@ -1,0 +1,14 @@
+.bg {
+    &_white {
+        background-color: $white;
+    }
+    &_gl {
+        background-color: $gray-light;
+    }
+    &_green {
+        background-color: $green;
+    }
+    &_violet {
+        background-color: $violet;
+    }
+}

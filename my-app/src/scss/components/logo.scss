@@ -1,0 +1,14 @@
+.logo {
+    width: 56px;
+    height: 56px;
+
+    border-radius: 50%;
+    padding: 5px;
+
+    background-color: #F7527C;
+    box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0.15);
+
+    &__wrapper {
+        margin: 0 auto 120px;
+    }
+}
