@@ -1,0 +1,17 @@
+.icons {
+	&__list {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+        align-items: center;
+        flex-basis: 370px;
+    }
+
+    &__svg {
+		color: $gray;
+
+        &_active {
+            color: $crimson;
+        }
+    }
+}
