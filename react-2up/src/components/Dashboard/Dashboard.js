@@ -1,4 +1,4 @@
-import React, {Fragment} from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import {Trophy} from 'styled-icons/fa-solid/Trophy';
 import {Star} from 'styled-icons/fa-solid/Star';
