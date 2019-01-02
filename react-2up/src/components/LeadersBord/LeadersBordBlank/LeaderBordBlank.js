@@ -34,7 +34,7 @@ const leaderBordBlank = (props) => {
         <PersonBlank>
             <PersonBlankPlayerInfo>
                 <PersonBlankPlayerName>{props.name}</PersonBlankPlayerName>
-                <PersonBlankPlayerScore>{props.score}</PersonBlankPlayerScore>
+                <PersonBlankPlayerScore>{props.score} очков</PersonBlankPlayerScore>
             </PersonBlankPlayerInfo>
             <img src={props.picture} />
 

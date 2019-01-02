@@ -34,21 +34,17 @@ const PagginationButton = styled.button`
     }
 `;
 
-
 const paginationButtons = () => {
+    let items = [];
+    for (let i = 0; i < 3; i++){
+        items.push(
+            <PaginationListItem key={i}>
+                 <PagginationButton/>
+            </PaginationListItem>)
+    }
     return (
         <PagintionButtonsContainer>
-            <PaginationButtonsList>
-                <PaginationListItem>
-                    <PagginationButton/>
-                </PaginationListItem>
-                <PaginationListItem>
-                    <PagginationButton/>
-                </PaginationListItem>
-                <PaginationListItem>
-                    <PagginationButton/>
-                </PaginationListItem>
-            </PaginationButtonsList>
+            <PaginationButtonsList>{items}</PaginationButtonsList>
         </PagintionButtonsContainer>
     )
 };

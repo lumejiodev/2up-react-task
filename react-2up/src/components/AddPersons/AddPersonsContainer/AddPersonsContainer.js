@@ -7,7 +7,7 @@ import PageHeaderTitle from '../../common/PageHeaderTitle';
 const addPersonsContainer = () => {
     return (
         <PageColumnContainer>
-            <PageHeader>
+            <PageHeader color={true}>
                 <PageHeaderTitle>Добавить участника</PageHeaderTitle>
             </PageHeader>
             <AddPersonsForm/>

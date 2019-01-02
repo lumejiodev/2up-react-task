@@ -9,7 +9,7 @@ const PageContainer = styled.div`
     justify-content: space-between;
 `;
 
-const pagecontainer = () => {
+const Container = () => {
     return (
         <PageContainer>
             <Dashboard/>
@@ -19,4 +19,4 @@ const pagecontainer = () => {
     )
 };
 
-export default pagecontainer
+export default Container

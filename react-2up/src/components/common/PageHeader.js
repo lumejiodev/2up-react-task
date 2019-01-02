@@ -4,11 +4,10 @@ import styled from 'styled-components';
 const PageHeader = styled.div`
     text-align: left;
     padding: 20px 34px 24px 34px;
-    background-color: #7AD18A;
+    background-color: ${props => props.color ? '#7AD18A' : '#847AD1'}; //почему-то не работает это условие
 `;
 
 const pageHeader = (props) => {
-
     return (
         <PageHeader>
             {props.children}

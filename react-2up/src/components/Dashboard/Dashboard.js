@@ -1,9 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import {Trophy} from 'styled-icons/fa-solid/Trophy';
-import {Star} from 'styled-icons/fa-solid/Star';
-import {Gem} from 'styled-icons/fa-regular/Gem';
-import {Anchor} from 'styled-icons/fa-solid/Anchor';
+import {Anchor, Star, Gem, Trophy} from 'styled-icons/fa-solid';
 
 const Dashboard = styled.div`
     width: 114px;
