@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux'
 import styled from 'styled-components';
 import LeaderBordBlank from '../LeadersBordBlank/LeaderBordBlank';
 import PaginationButtons from '../Paginations/PaginationButtons';
@@ -24,7 +25,7 @@ class LeaderBordContainer extends Component {
                     <PageHeaderTitle>Лидеры</PageHeaderTitle>
                 </PageHeader>
                 <LeaderBordContent>
-                    <LeaderBordBlank name="Петр Иванов" score="8901" picture={rank1}/>
+                    <LeaderBordBlank name={this.props.name} score={this.props.score} picture={rank1}/>
                     <LeaderBordBlank name="Иван Петров" score="8801" picture={rank2}/>
                     <LeaderBordBlank name="Иван Иванов" score="8701" picture={rank3}/>
                     <LeaderBordBlank name="Петр Петров" score="8601" picture=""/>
@@ -36,4 +37,12 @@ class LeaderBordContainer extends Component {
     }
 }
 
-export default LeaderBordContainer
+const mapStateToProps = state => {
+    return {
+        name: state.name,
+        score: state.score,
+        picture: state.picture
+    };
+};
+
+export default connect(mapStateToProps)(LeaderBordContainer);
