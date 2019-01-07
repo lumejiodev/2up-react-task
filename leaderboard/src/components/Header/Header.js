@@ -3,7 +3,9 @@ import './Header.css';
 
 const header = (props) => {
     return (
-        <div className='Header'>{ props.title }</div>
+        <div className={`Header Header_color_${props.color}`}>
+            { props.title }
+        </div>
     )
 }
 

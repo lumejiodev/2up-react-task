@@ -1,17 +1,19 @@
 import React from 'react';
 import './LeaderCard.css';
+import TrophyCup from '../TrophyCup/TrophyCup';
 
 
 const leaderCard = (props) => {
     return (
         <div className='Leader-card__container'>
+
             <div className='Leader-card'>
                 <p className='Leader-name'>{ props.name }</p>
-                <p className='Leader-score'>{ props.score }</p>
+                <p className='Leader-score'>{ props.score} очков</p>
             </div>
-            <div className='Leader-card__image'>
-                <img src={props.img} alt='cup'/>
-            </div>
+
+            {props.img ? <TrophyCup img={props.img} /> : null}
+            
         </div>
     )
 }

@@ -1,0 +1,22 @@
+.button {
+    display: flex;
+    align-items: center;
+
+    font-family: Tahoma;
+    line-height: 25px;
+    font-size: 21px;
+    text-align: right;
+
+    color: #7AD18A;
+    border: none;
+    background-color: #fff;
+}
+
+.button span {
+    margin-right: 10px;
+}
+
+.button_add {
+    margin-left: auto;
+    padding-right: 75px;
+}

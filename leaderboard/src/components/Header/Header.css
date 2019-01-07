@@ -11,5 +11,13 @@
     line-height: 72px; 
 
     color: #fff;
+    
+}
+
+.Header_color_green {
     background-color: #7AD18A;
+}
+
+.Header_color_purple {
+    background-color: #847AD1;
 }
