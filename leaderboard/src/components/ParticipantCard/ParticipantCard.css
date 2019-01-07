@@ -1,9 +1,9 @@
-.participantCard {
+.participant-card {
     margin: 95px 30px 0;
     margin-bottom: 60px;
 }
 
-.participantCard__title {
+.participant-card__title {
     padding-bottom: 20px;
 
     font-family: Tahoma;
@@ -13,7 +13,7 @@
     color: #779181;
 }
 
-.participantCard__name {
+.participant-card__name {
     width: 473px;
     height: 58px; 
     padding-left: 10px;

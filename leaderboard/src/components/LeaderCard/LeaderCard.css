@@ -1,4 +1,4 @@
-.LeaderCard__container {
+.Leader-card__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -10,7 +10,7 @@
     box-sizing: border-box;
 }
 
-.LeaderCard {
+.Leader-card {
     margin-bottom: 5px;
 }
 
@@ -30,14 +30,14 @@
     color: #C1C5D4;
 }
 
-.LeaderCard__image {
+.Leader-card__image {
     position: relative;
     width: 67px;
     height: 68px;
     background: url('./cupBackground.svg') no-repeat;
 }
 
-.LeaderCard__image img {
+.Leader-card__image img {
     position: absolute;
     top: 30%;
     left: 47%;
