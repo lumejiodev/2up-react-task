@@ -1,0 +1,38 @@
+
+.sidebar {
+    width: 144px;
+    padding-top: 65px;
+
+    background-color: #fff;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &-list {
+        margin-top: 150px;
+
+        &__item button {
+            font-size: 24px;
+            line-height: 100px;
+            color: #C1C5D4;
+        }
+
+        &__item_active button {
+            color: #F7527C;
+        }
+    }
+}
+
+.logo {
+    width: 66px;
+    height: 66px;
+
+    border-radius: 50%;
+    background-color: #F7527C;
+
+    border: 5px solid #E3DBDB;;
+}

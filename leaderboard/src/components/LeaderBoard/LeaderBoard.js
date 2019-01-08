@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './LeaderBoard.css';
+import './LeaderBoard.scss';
 import Header from '../Header/Header';
 import Pagination from '../Pagination/Pagination';
 import ParticipantCard from '../ParticipantCard/ParticipantCard';
@@ -34,7 +34,7 @@ class LeaderBoard extends Component {
           {this.state.participantsInfo.map(infoBlock => {
             return <ParticipantCard title={infoBlock.title} />
           })}
-          
+
           <ButtonAdd />
         </div>
 

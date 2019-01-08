@@ -1,5 +1,5 @@
 import React from 'react'
-import './SidebarNavigation.css';
+import './SidebarNavigation.scss';
 import { ReactComponent as CupSidebar} from "../../img/cup_sidebar.svg";
 import { ReactComponent as Star} from "../../img/star.svg";
 import { ReactComponent as Anchor} from "../../img/anchor.svg";

@@ -1,5 +1,5 @@
 import React from 'react';
-import './LeaderCard.css';
+import './LeaderCard.scss';
 import TrophyCup from '../TrophyCup/TrophyCup';
 
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import { ReactComponent as ButtonArrow} from "../../img/button_arrow.svg";
-import './ButtonAdd.css';
+import './ButtonAdd.scss';
 
 export default function ButtonAdd() {
     return (

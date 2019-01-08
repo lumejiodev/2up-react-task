@@ -1,5 +1,5 @@
 import React from 'react';
-import './ParticipantCard.css';
+import './ParticipantCard.scss';
 
 const participantCard = (props) => {
     return (
