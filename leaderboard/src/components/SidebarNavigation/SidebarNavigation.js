@@ -6,7 +6,7 @@ import { ReactComponent as Anchor} from "../../img/anchor.svg";
 import { ReactComponent as Diamond} from "../../img/diamond.svg";
 
 
-export default function SidebarNavigation(){
+export default function SidebarNavigation() {
     return (
 
         <aside className="sidebar">
