@@ -1,5 +1,5 @@
 import React from 'react';
-import './TrophyCup.scss';
+import 'components/TrophyCup/TrophyCup.scss';
 
 function TrophyCup (props) {
     

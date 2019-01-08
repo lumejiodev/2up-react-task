@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import SidebarNavigation from '../components/SidebarNavigation/SidebarNavigation';
-import LeaderBoard from '../components/LeaderBoard/LeaderBoard';
-import './MainContainer.css';
+import SidebarNavigation from 'components/SidebarNavigation/SidebarNavigation';
+import LeaderBoard from 'components/LeaderBoard/LeaderBoard';
+import 'container/MainContainer.scss';
 
 class MainContainer extends Component {
     render() {

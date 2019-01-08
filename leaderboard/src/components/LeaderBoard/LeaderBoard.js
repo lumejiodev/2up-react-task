@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import './LeaderBoard.scss';
-import Header from '../Header/Header';
-import Pagination from '../Pagination/Pagination';
-import ParticipantCard from '../ParticipantCard/ParticipantCard';
-import LeaderCard from '../LeaderCard/LeaderCard';
-import cup from '../LeaderCard/cup.svg';
-import ButtonAdd from '../Button/ButtonAdd';
+import 'components/LeaderBoard/LeaderBoard.scss';
+import Header from 'components/Header/Header';
+import Pagination from 'components/Pagination/Pagination';
+import ParticipantCard from 'components/ParticipantCard/ParticipantCard';
+import LeaderCard from 'components/LeaderCard/LeaderCard';
+import cup from 'components/LeaderCard/cup.svg';
+import ButtonAdd from 'components/Button/ButtonAdd';
 
 class LeaderBoard extends Component {
   state = {

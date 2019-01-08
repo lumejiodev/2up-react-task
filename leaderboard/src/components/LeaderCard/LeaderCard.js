@@ -1,6 +1,6 @@
 import React from 'react';
-import './LeaderCard.scss';
-import TrophyCup from '../TrophyCup/TrophyCup';
+import 'components/LeaderCard/LeaderCard.scss';
+import TrophyCup from 'components/TrophyCup/TrophyCup';
 
 
 const leaderCard = (props) => {
