@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import '../Common-styles.css';
 import './LeaderBoard.css';
-import Header from '../components/Header/Header';
-import ParticipantCard from '../components/ParticipantCard/ParticipantCard';
-import LeaderCard from '../components/LeaderCard/LeaderCard';
-import cup from '../components/LeaderCard/cup.svg';
-import ButtonAdd from '../components/Button/ButtonAdd';
+import Header from '../Header/Header';
+import Pagination from '../Pagination/Pagination';
+import ParticipantCard from '../ParticipantCard/ParticipantCard';
+import LeaderCard from '../LeaderCard/LeaderCard';
+import cup from '../LeaderCard/cup.svg';
+import ButtonAdd from '../Button/ButtonAdd';
 
 class LeaderBoard extends Component {
   render() {
@@ -22,15 +22,17 @@ class LeaderBoard extends Component {
         <div className='Board'>
           <Header title='Лидеры' color='purple' />
 
-          <div className='leadersContainer'>
-            <LeaderCard name='Пётр Иванов' score={8901} img={cup}/>
-            <LeaderCard name='Максим Кальченко' score={7890} img={cup}/>
-            <LeaderCard name='Алёна Михалкова' score={7801} img={cup}/>
+          <div className='Leaders__container'>
+            <LeaderCard name='Пётр Иванов' score={8901} img={cup} imgColor={'gold'} />
+            <LeaderCard name='Максим Кальченко' score={7890} img={cup} imgColor={'grey'} />
+            <LeaderCard name='Алёна Михалкова' score={7801} img={cup} imgColor={'brown'} />
             <LeaderCard name='Виталий Янкевич' score={7699}/>
             <LeaderCard name='Богдан Емельянов' score={5641}/>
             <LeaderCard name='Владимир Жванецкий' score={5278}/>
             <LeaderCard name='Лев Ямских' score={4804}/>
           </div>
+
+          <Pagination />
 
         </div>
       </div>

@@ -23,23 +23,11 @@
 }
 
 .Leader-score {
+    padding-top: 5px;
+
     font-family: Tahoma;
     line-height: 0px;
     font-size: 18px;
 
     color: #C1C5D4;
 }
-
-/* .Leader-card__image {
-    position: relative;
-    width: 67px;
-    height: 68px;
-    background: url('./cupBackground.svg') no-repeat;
-}
-
-.Leader-card__image img {
-    position: absolute;
-    top: 30%;
-    left: 47%;
-    transform: translate(-50%);
-} */

@@ -12,7 +12,7 @@ const leaderCard = (props) => {
                 <p className='Leader-score'>{ props.score} очков</p>
             </div>
 
-            {props.img ? <TrophyCup img={props.img} /> : null}
+            {props.img ? <TrophyCup img={props.img} imgColor={props.imgColor} /> : null}
             
         </div>
     )

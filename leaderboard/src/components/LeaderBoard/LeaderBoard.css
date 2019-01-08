@@ -1,0 +1,23 @@
+.Board__container {
+    display: flex;
+    justify-content: center;
+    width: 1253px;
+    /* margin: 30px; */
+
+    background-color: #EFEEF8;
+}
+
+.Board {
+    width: 532px;
+    height: auto;
+    margin: 55px 20px;
+
+
+    background-color: white;
+    border: 1px solid #eee;
+    border-radius: 2px;
+}
+
+.Leaders__container {
+    margin: 20px 30px;
+}

@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import LeaderBoard from "./container/LeaderBoard";
+import MainContainer from "./container/MainContainer";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-      <LeaderBoard />
+        <MainContainer />
       </div>
     );
   }

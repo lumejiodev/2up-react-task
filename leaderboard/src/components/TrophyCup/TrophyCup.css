@@ -2,7 +2,6 @@
     position: relative;
     width: 67px;
     height: 68px;
-    background: url('./cupBackground.svg') no-repeat;
 }
 
 .Leader-card__image img {
