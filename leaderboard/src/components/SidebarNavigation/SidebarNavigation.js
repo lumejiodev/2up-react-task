@@ -14,17 +14,20 @@ class SidebarNavigation extends Component {
 
     iconsColorChangeHandler = (e) => {
         let svgs = document.querySelectorAll('.navigation-list__item .button svg');
-        // console.log(svgs[1].firstChild);
+        let target = e.target;
+
         for (var i = 0; i < svgs.length; i++) {
             svgs[i].classList.remove('active');
         }
-        
-        // let currentState = this.state.isActive;
-        console.log(e.target);
-        e.target.classList.add('active')
-        // this.setState({
-        //     isActive: !currentState
-        // })
+
+        while(!(target.classList.contains('sidebarIcon'))) {
+            target = target.parentNode;
+
+            if (target.classList.contains('sidebarIcon')) {
+                target.classList.add('active')
+            }
+        }
+        // console.log(target);
     }
 
     render() {
@@ -37,29 +40,29 @@ class SidebarNavigation extends Component {
                         <li className="navigation-list__item navigation-list__item_active">
                             <button className="button">
                                 <CupSidebar 
-                                
+                                className='sidebarIcon'
                                 onClick={ this.iconsColorChangeHandler }/>
                             </button>
                         </li>
                         <li className="navigation-list__item">
                             <button className="button">
                                 <Star 
-                                 
-                                 onClick={ this.iconsColorChangeHandler }/>
+                                className='sidebarIcon' 
+                                onClick={ this.iconsColorChangeHandler }/>
                             </button>
                         </li>
                         <li className="navigation-list__item">
                             <button className="button">
                                 <Anchor 
-                                 
-                                 onClick={ this.iconsColorChangeHandler }/>
+                                className='sidebarIcon' 
+                                onClick={ this.iconsColorChangeHandler }/>
                             </button>
                         </li>
                         <li className="navigation-list__item">
                             <button className="button">
                                 <Diamond 
-                                 
-                                 onClick={ this.iconsColorChangeHandler }/>
+                                className='sidebarIcon' 
+                                onClick={ this.iconsColorChangeHandler }/>
                             </button>
                         </li>
                     </ul>
