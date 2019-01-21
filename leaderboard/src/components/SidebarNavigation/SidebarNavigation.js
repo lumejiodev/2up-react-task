@@ -8,10 +8,6 @@ import { ReactComponent as Diamond} from "assets/diamond.svg";
 
 class SidebarNavigation extends Component {
 
-    // state = {
-    //     isActive: false
-    // }
-
     iconsColorChangeHandler = (e) => {
         let svgs = document.querySelectorAll('.navigation-list__item .button svg');
         let target = e.target;

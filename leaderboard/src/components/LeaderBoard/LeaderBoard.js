@@ -31,8 +31,8 @@ class LeaderBoard extends Component {
         <div className='Board'>
           <Header title='Добавить участника' color='green' />
 
-          {this.state.participantsInfo.map(infoBlock => {
-            return <ParticipantCard title={infoBlock.title} />
+          {this.state.participantsInfo.map((infoBlock, index) => {
+            return <ParticipantCard title={infoBlock.title} key={index} />
           })}
 
           <ButtonAdd />
@@ -47,7 +47,8 @@ class LeaderBoard extends Component {
                 name={person.name}
                 score={person.score}
                 img={person.img}
-                imgColor={person.imgColor} />
+                imgColor={person.imgColor}
+                key={person.name} />
             })}
           </div>
 
