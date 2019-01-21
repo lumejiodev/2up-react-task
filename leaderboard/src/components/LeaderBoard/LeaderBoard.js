@@ -4,7 +4,7 @@ import Header from 'components/Header/Header';
 import Pagination from 'components/Pagination/Pagination';
 import ParticipantCard from 'components/ParticipantCard/ParticipantCard';
 import LeaderCard from 'components/LeaderCard/LeaderCard';
-import cup from 'components/LeaderCard/cup.svg';
+import cup from 'assets/cup.svg';
 import ButtonAdd from 'components/Button/ButtonAdd';
 
 class LeaderBoard extends Component {
