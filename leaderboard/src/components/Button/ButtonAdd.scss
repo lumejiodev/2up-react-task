@@ -1,0 +1,23 @@
+.button {
+    font-family: Tahoma;
+    line-height: 25px;
+    font-size: 21px;
+    text-align: right;
+    outline: none;
+
+    & span {
+        margin-right: 10px;
+    }
+
+    &_add {
+        display: flex;
+        align-items: center;
+    
+        margin-left: auto;
+        padding-right: 75px;
+    
+        color: #7AD18A;
+        border: none;
+        background-color: #fff;
+    }
+}

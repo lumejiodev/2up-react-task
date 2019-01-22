@@ -1,0 +1,35 @@
+.Leader {
+    &-card {
+        margin-bottom: 5px;
+
+        &__container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 10px 0;
+            padding: 30px;
+        
+            background: #FFFFFF;
+            border: 2px solid #EFEEF8;
+            box-sizing: border-box;
+        }
+    }
+
+    &-name {
+        font-family: Tahoma;
+        line-height: 0px;
+        font-size: 21px;
+    
+        color: #777D91;
+    }
+
+    &-score {
+        padding-top: 5px;
+    
+        font-family: Tahoma;
+        line-height: 0px;
+        font-size: 18px;
+    
+        color: #C1C5D4;
+    }
+}

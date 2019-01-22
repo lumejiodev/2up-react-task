@@ -1,0 +1,22 @@
+.Header {
+    width: 532px;
+    height: 72px;  
+    padding-left: 35px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+
+    font-family: Tahoma;
+    line-height: 0px;
+    font-size: 24px;
+    line-height: 72px; 
+
+    color: #fff;
+
+    &_color_green {
+        background-color: #7AD18A;
+    }
+
+    &_color_purple {
+        background-color: #847AD1;
+    }
+}
